@@ -1,0 +1,60 @@
+.services {
+    padding: 100px 0;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 346px;
+        height: 328px;
+        background-image: url(../images/services__shadow.png);
+        bottom: 0;
+        left: 0;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 16px;
+        margin-top: 19px;
+    }
+
+    &__item {
+        padding: 30px 39px 51px 30px;
+        background-color: $beige;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+        border-radius: 16px;
+    }
+
+    &__item-title {
+        font-family: $Source_Serif_Pro;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $green;
+        margin-top: 9px;
+        margin-bottom: 6px;
+    }
+
+    &__item-text {
+        max-width: 310px;
+        margin-bottom: 14px;
+    }
+
+    &__item-btn {
+        font-size: 17px;
+        line-height: 24px;
+        color: $green;
+        position: relative;
+        padding-right: 30.2px;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 19.2px;
+            height: 10px;
+            background-image: url(../images/arrow.svg);
+            right: 0;
+            top: 8px;
+
+        }
+    }
+}
