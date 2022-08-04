@@ -1,0 +1,69 @@
+.store {
+    padding: 100px 0;
+    background-color: $beige;
+
+    & .section__title-text {
+        color: #DB343B;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+
+
+    }
+
+    &__item-text {
+        padding: 30px 41px 26px 30px;
+        background-color: $white;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 16px 16px;
+        max-width: 379px;
+    }
+    &__content .store__item:nth-child(3) .store__item-text{
+        padding-bottom: 48px;
+    }
+
+    &__item-title {
+        font-family: $Source_Serif_Pro;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        color: $green;
+        margin-bottom: 6px;
+    }
+
+    &__item-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $green;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        font-size: 17px;
+        line-height: 24px;
+        color: $green;
+        position: relative;
+        padding-right: 30.2px;
+        text-align: center;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 19.2px;
+            height: 10px;
+            background-image: url(../images/arrow.svg);
+            right: 0;
+            top: 8px;
+
+        }
+    }
+}
