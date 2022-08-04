@@ -2,3 +2,16 @@
 @import '_reset';
 @import '_mixing';
 
+body {
+    font-family: $roboto;
+    color: $black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.container{
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
