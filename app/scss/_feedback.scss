@@ -1,0 +1,36 @@
+.feedback {
+    padding: 100px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 202px;
+    }
+
+    &__content {
+        padding: 80px;
+        background-color: $beige;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        max-width: 313px;
+    }
+
+    &__btn {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: $white;
+        padding: 15px 25px;
+        background-color: $green;
+        border-radius: 6px;
+    }
+}
