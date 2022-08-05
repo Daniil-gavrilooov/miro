@@ -6,6 +6,11 @@
         align-items: center;
     }
 
+    &__burger-menu {
+        display: flex;
+        align-items: center;
+    }
+
     &__menu {
         max-width: 350px;
         margin-left: auto;
@@ -63,7 +68,8 @@
         background-color: $beige;
         padding: 100px 0;
         position: relative;
-        &::after{
+
+        &::after {
             position: absolute;
             content: '';
             right: 0;
@@ -75,7 +81,8 @@
             height: 390px;
             z-index: 5;
         }
-        &::before{
+
+        &::before {
             position: absolute;
             content: '';
             bottom: 0;
@@ -101,8 +108,84 @@
         max-width: 477px;
         margin-bottom: 11px;
     }
-    &__text{
+
+    &__text {
         max-width: 534px;
         margin-bottom: 17px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        overflow: hidden;
+
+        &__top {
+            position: relative;
+        }
+
+        &__burger-btn {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 4;
+
+            &::after,
+            &::before,
+            & span {
+                position: absolute;
+                content: '';
+                width: 30px;
+                right: 0;
+                height: 2px;
+                background-color: $black;
+            }
+            &::after{
+                top: 0;
+            }
+            &::before{
+                top: 44.5%;
+
+            }
+            & span{
+                bottom: 0;
+            }
+
+        }
+
+        &__burger-menu {
+            position: absolute;
+            content: '';
+            right: -3%;
+            top: -3%;
+            z-index: 3;
+            flex-direction: column;
+            gap: 15px;
+            background-color: $beige;
+            height: 196vh;
+            padding: 30px 108px;
+            transform: translateX(100%);
+        }
+
+        &__menu {}
+
+        &__menu-list {
+            flex-direction: column;
+        }
+
+        &__top-btn {}
+
+        &__title {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        &__text {
+            max-width: 318px;
+            font-size: 12px;
+        }
+
+        & .section__btn {
+            font-size: 12px;
+        }
     }
 }
